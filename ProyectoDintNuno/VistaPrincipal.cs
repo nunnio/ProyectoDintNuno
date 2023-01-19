@@ -17,6 +17,16 @@ namespace ProyectoDintNuno
             InitializeComponent();
         }
 
-        
+        private void btnAnadir_Click(object sender, EventArgs e)
+        {
+            FlowLayoutPanel panel = new FlowLayoutPanel();
+            PictureBox pb = new PictureBox();
+            TextBox tb = new TextBox();
+            panel.Controls.Add(pb);
+            panel.Controls.Add(tb);
+             
+
+            flpConjunto.Controls.Add(panel);
+        }
     }
 }

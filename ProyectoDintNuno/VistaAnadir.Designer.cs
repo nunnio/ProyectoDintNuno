@@ -57,6 +57,7 @@ namespace ProyectoDintNuno
             this.pbImage.Margin = new System.Windows.Forms.Padding(4);
             this.pbImage.Name = "pbImage";
             this.pbImage.Size = new System.Drawing.Size(214, 272);
+            this.pbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbImage.TabIndex = 0;
             this.pbImage.TabStop = false;
             // 
@@ -146,7 +147,7 @@ namespace ProyectoDintNuno
             this.cbFormat.Items.AddRange(new object[] {
             "CD",
             "Vinilo",
-            "Pack especial"});
+            "Cassette"});
             this.cbFormat.Location = new System.Drawing.Point(240, 215);
             this.cbFormat.Margin = new System.Windows.Forms.Padding(4);
             this.cbFormat.Name = "cbFormat";
@@ -160,7 +161,13 @@ namespace ProyectoDintNuno
             this.cbType.Items.AddRange(new object[] {
             "Album",
             "Single",
-            "LP"});
+            "LP",
+            "EP",
+            "Maxi",
+            "Mini LP",
+            "Boxset",
+            "Doble LP",
+            "Doble CD"});
             this.cbType.Location = new System.Drawing.Point(240, 279);
             this.cbType.Margin = new System.Windows.Forms.Padding(4);
             this.cbType.Name = "cbType";

@@ -19,6 +19,7 @@ namespace ProyectoDintNuno
         public DateTime DAdquisition;
         public DateTime DEdition;
         public string Description;
+        public Image Image;
 
         public VistaAnadir()
         {
@@ -36,7 +37,7 @@ namespace ProyectoDintNuno
             DAdquisition = dtpAdquisition.Value;
             DEdition = dtpEdition.Value;
             Description = tbDescription.Text;
-            
+            Image = pbImage.Image;
         }
 
         private void btnExplore_Click(object sender, EventArgs e)
@@ -44,8 +45,12 @@ namespace ProyectoDintNuno
             OpenFileDialog of = new OpenFileDialog();
             if(of.ShowDialog() == DialogResult.OK)
             {
-                PictureBox pb = new PictureBox();
-                pb.Image = Image.FromFile(of.FileName);
+                if (of.CheckFileExists)
+                {
+                    Image = Image.FromFile(of.FileName);
+                    pbImage.Image = Image;
+                }
+                
             }
         }
     }

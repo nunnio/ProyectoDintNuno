@@ -26,20 +26,26 @@ namespace ProyectoDintNuno
                 PictureBox pb = new PictureBox();
                 Label lblName = new Label();
                 Label lblArtist = new Label();
-                
+
+                lblName.Text = form.Name;
+                lblName.Font = new Font("Segoe UI", 16);
+                lblName.TextAlign = ContentAlignment.MiddleCenter;
+                lblArtist.Text = form.PArtist;
+                lblArtist.Font = new Font("Segoe UI", 13);
+                lblArtist.TextAlign = ContentAlignment.MiddleCenter;
+
+
                 panel.Controls.Add(pb);
                 panel.Controls.Add(lblName);
                 panel.Controls.Add(lblArtist);
+                panel.Size = new Size(210, 320);
+                
 
-                lblName.Text = form.Name;
-                lblName.Font = new Font("Segoe UI", 9);
-                lblArtist.Text = form.PArtist;
-                lblArtist.Font = new Font("Segoe UI", 6);
-
+                pb.Image = form.Image;
+                pb.SizeMode = PictureBoxSizeMode.Zoom;
+                pb.Size = new Size(180, 260);
                 flpConjunto.Controls.Add(panel);
-            }
-
-            
+            }            
         }
     }
 }

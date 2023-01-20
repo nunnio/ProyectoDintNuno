@@ -33,14 +33,8 @@ namespace ProyectoDintNuno
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vistaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.flpConjunto = new System.Windows.Forms.FlowLayoutPanel();
-            this.flpElemento = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnAnadir = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
-            this.flpConjunto.SuspendLayout();
-            this.flpElemento.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -50,7 +44,7 @@ namespace ProyectoDintNuno
             this.vistaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(858, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -68,43 +62,22 @@ namespace ProyectoDintNuno
             // 
             // flpConjunto
             // 
-            this.flpConjunto.Controls.Add(this.flpElemento);
+            this.flpConjunto.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.flpConjunto.Location = new System.Drawing.Point(0, 24);
             this.flpConjunto.Name = "flpConjunto";
-            this.flpConjunto.Size = new System.Drawing.Size(800, 375);
+            this.flpConjunto.Size = new System.Drawing.Size(858, 428);
             this.flpConjunto.TabIndex = 2;
-            // 
-            // flpElemento
-            // 
-            this.flpElemento.Controls.Add(this.pictureBox1);
-            this.flpElemento.Controls.Add(this.textBox1);
-            this.flpElemento.Location = new System.Drawing.Point(3, 3);
-            this.flpElemento.Name = "flpElemento";
-            this.flpElemento.Size = new System.Drawing.Size(113, 133);
-            this.flpElemento.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(110, 95);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(3, 104);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(110, 23);
-            this.textBox1.TabIndex = 1;
             // 
             // btnAnadir
             // 
+            this.btnAnadir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAnadir.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnAnadir.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnAnadir.FlatAppearance.BorderSize = 0;
             this.btnAnadir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnadir.Location = new System.Drawing.Point(713, 405);
+            this.btnAnadir.Location = new System.Drawing.Point(774, 455);
             this.btnAnadir.Margin = new System.Windows.Forms.Padding(0);
             this.btnAnadir.Name = "btnAnadir";
             this.btnAnadir.Size = new System.Drawing.Size(75, 42);
@@ -117,7 +90,7 @@ namespace ProyectoDintNuno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(858, 503);
             this.Controls.Add(this.btnAnadir);
             this.Controls.Add(this.flpConjunto);
             this.Controls.Add(this.menuStrip1);
@@ -126,10 +99,6 @@ namespace ProyectoDintNuno
             this.Text = "Gestor";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.flpConjunto.ResumeLayout(false);
-            this.flpElemento.ResumeLayout(false);
-            this.flpElemento.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,9 +109,6 @@ namespace ProyectoDintNuno
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vistaToolStripMenuItem;
         private System.Windows.Forms.FlowLayoutPanel flpConjunto;
-        private System.Windows.Forms.FlowLayoutPanel flpElemento;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnAnadir;
     }
 }

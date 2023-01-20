@@ -29,188 +29,267 @@ namespace ProyectoDintNuno
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblImagen = new System.Windows.Forms.Label();
+            this.pbImage = new System.Windows.Forms.PictureBox();
+            this.lblImage = new System.Windows.Forms.Label();
             this.lblCabecera = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.tb = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnAceptar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.btnExplore = new System.Windows.Forms.Button();
+            this.tbName = new System.Windows.Forms.TextBox();
+            this.tbArtist = new System.Windows.Forms.TextBox();
+            this.tbSecArtist = new System.Windows.Forms.TextBox();
+            this.tbDescription = new System.Windows.Forms.TextBox();
+            this.cbFormat = new System.Windows.Forms.ComboBox();
+            this.cbType = new System.Windows.Forms.ComboBox();
+            this.dtpAdquisition = new System.Windows.Forms.DateTimePicker();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnAccept = new System.Windows.Forms.Button();
+            this.dtpEdition = new System.Windows.Forms.DateTimePicker();
+            this.tbGenre = new System.Windows.Forms.TextBox();
+            this.lblAdquisition = new System.Windows.Forms.Label();
+            this.lblEdition = new System.Windows.Forms.Label();
+            this.lblFormat = new System.Windows.Forms.Label();
+            this.lblType = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // pbImage
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(17, 57);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(317, 381);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pbImage.Location = new System.Drawing.Point(13, 38);
+            this.pbImage.Margin = new System.Windows.Forms.Padding(4);
+            this.pbImage.Name = "pbImage";
+            this.pbImage.Size = new System.Drawing.Size(214, 272);
+            this.pbImage.TabIndex = 0;
+            this.pbImage.TabStop = false;
             // 
-            // lblImagen
+            // lblImage
             // 
-            this.lblImagen.AutoSize = true;
-            this.lblImagen.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblImagen.Location = new System.Drawing.Point(17, 27);
-            this.lblImagen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblImagen.Name = "lblImagen";
-            this.lblImagen.Size = new System.Drawing.Size(72, 25);
-            this.lblImagen.TabIndex = 1;
-            this.lblImagen.Text = "Imagen";
+            this.lblImage.AutoSize = true;
+            this.lblImage.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblImage.Location = new System.Drawing.Point(13, 9);
+            this.lblImage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblImage.Name = "lblImage";
+            this.lblImage.Size = new System.Drawing.Size(62, 25);
+            this.lblImage.TabIndex = 1;
+            this.lblImage.Text = "Image";
             // 
             // lblCabecera
             // 
             this.lblCabecera.AutoSize = true;
             this.lblCabecera.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCabecera.Location = new System.Drawing.Point(343, 12);
+            this.lblCabecera.Location = new System.Drawing.Point(240, 6);
             this.lblCabecera.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCabecera.Name = "lblCabecera";
-            this.lblCabecera.Size = new System.Drawing.Size(157, 28);
+            this.lblCabecera.Size = new System.Drawing.Size(126, 28);
             this.lblCabecera.TabIndex = 2;
-            this.lblCabecera.Text = "Nuevo Elemento";
+            this.lblCabecera.Text = "New element";
             // 
-            // button1
+            // btnExplore
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(245, 27);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 26);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "explorar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnExplore.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnExplore.Location = new System.Drawing.Point(138, 8);
+            this.btnExplore.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExplore.Name = "btnExplore";
+            this.btnExplore.Size = new System.Drawing.Size(89, 26);
+            this.btnExplore.TabIndex = 7;
+            this.btnExplore.Text = "explore";
+            this.btnExplore.UseVisualStyleBackColor = true;
+            this.btnExplore.Click += new System.EventHandler(this.btnExplore_Click);
             // 
-            // tb
+            // tbName
             // 
-            this.tb.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb.Location = new System.Drawing.Point(361, 57);
-            this.tb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tb.Name = "tb";
-            this.tb.PlaceholderText = "Nombre";
-            this.tb.Size = new System.Drawing.Size(228, 30);
-            this.tb.TabIndex = 8;
-            this.tb.Tag = "";
+            this.tbName.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbName.Location = new System.Drawing.Point(240, 38);
+            this.tbName.Margin = new System.Windows.Forms.Padding(4);
+            this.tbName.Name = "tbName";
+            this.tbName.PlaceholderText = "Name";
+            this.tbName.Size = new System.Drawing.Size(228, 30);
+            this.tbName.TabIndex = 8;
+            this.tbName.Tag = "";
             // 
-            // textBox1
+            // tbArtist
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(361, 124);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PlaceholderText = "Autor principal";
-            this.textBox1.Size = new System.Drawing.Size(228, 30);
-            this.textBox1.TabIndex = 9;
-            this.textBox1.Tag = "";
+            this.tbArtist.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbArtist.Location = new System.Drawing.Point(240, 76);
+            this.tbArtist.Margin = new System.Windows.Forms.Padding(4);
+            this.tbArtist.Name = "tbArtist";
+            this.tbArtist.PlaceholderText = "Principal artist";
+            this.tbArtist.Size = new System.Drawing.Size(228, 30);
+            this.tbArtist.TabIndex = 9;
+            this.tbArtist.Tag = "";
             // 
-            // textBox2
+            // tbSecArtist
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(361, 192);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PlaceholderText = "Autor secundario";
-            this.textBox2.Size = new System.Drawing.Size(228, 30);
-            this.textBox2.TabIndex = 10;
-            this.textBox2.Tag = "";
+            this.tbSecArtist.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbSecArtist.Location = new System.Drawing.Point(240, 114);
+            this.tbSecArtist.Margin = new System.Windows.Forms.Padding(4);
+            this.tbSecArtist.Name = "tbSecArtist";
+            this.tbSecArtist.PlaceholderText = "Secundary asrtist";
+            this.tbSecArtist.Size = new System.Drawing.Size(228, 30);
+            this.tbSecArtist.TabIndex = 10;
+            this.tbSecArtist.Tag = "";
             // 
-            // textBox3
+            // tbDescription
             // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(361, 256);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.PlaceholderText = "Descripción";
-            this.textBox3.Size = new System.Drawing.Size(510, 124);
-            this.textBox3.TabIndex = 11;
-            this.textBox3.Tag = "";
+            this.tbDescription.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbDescription.Location = new System.Drawing.Point(474, 151);
+            this.tbDescription.Margin = new System.Windows.Forms.Padding(4);
+            this.tbDescription.Multiline = true;
+            this.tbDescription.Name = "tbDescription";
+            this.tbDescription.PlaceholderText = "Description";
+            this.tbDescription.Size = new System.Drawing.Size(228, 115);
+            this.tbDescription.TabIndex = 11;
+            this.tbDescription.Tag = "";
             // 
-            // comboBox1
+            // cbFormat
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbFormat.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbFormat.FormattingEnabled = true;
+            this.cbFormat.Items.AddRange(new object[] {
             "CD",
             "Vinilo",
             "Pack especial"});
-            this.comboBox1.Location = new System.Drawing.Point(641, 57);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(230, 31);
-            this.comboBox1.TabIndex = 12;
+            this.cbFormat.Location = new System.Drawing.Point(240, 215);
+            this.cbFormat.Margin = new System.Windows.Forms.Padding(4);
+            this.cbFormat.Name = "cbFormat";
+            this.cbFormat.Size = new System.Drawing.Size(228, 31);
+            this.cbFormat.TabIndex = 12;
             // 
-            // comboBox2
+            // cbType
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cbType.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbType.FormattingEnabled = true;
+            this.cbType.Items.AddRange(new object[] {
             "Album",
             "Single",
             "LP"});
-            this.comboBox2.Location = new System.Drawing.Point(641, 124);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(230, 31);
-            this.comboBox2.TabIndex = 13;
+            this.cbType.Location = new System.Drawing.Point(240, 279);
+            this.cbType.Margin = new System.Windows.Forms.Padding(4);
+            this.cbType.Name = "cbType";
+            this.cbType.Size = new System.Drawing.Size(228, 31);
+            this.cbType.TabIndex = 13;
             // 
-            // dateTimePicker1
+            // dtpAdquisition
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker1.Location = new System.Drawing.Point(641, 192);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(230, 30);
-            this.dateTimePicker1.TabIndex = 14;
+            this.dtpAdquisition.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpAdquisition.Location = new System.Drawing.Point(474, 39);
+            this.dtpAdquisition.Name = "dtpAdquisition";
+            this.dtpAdquisition.Size = new System.Drawing.Size(228, 30);
+            this.dtpAdquisition.TabIndex = 14;
             // 
-            // btnCancelar
+            // btnCancel
             // 
-            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCancelar.Location = new System.Drawing.Point(759, 404);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(112, 34);
-            this.btnCancelar.TabIndex = 15;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCancel.Location = new System.Drawing.Point(590, 279);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(112, 34);
+            this.btnCancel.TabIndex = 15;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
             // 
-            // btnAceptar
+            // btnAccept
             // 
-            this.btnAceptar.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAceptar.Location = new System.Drawing.Point(551, 404);
-            this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(186, 34);
-            this.btnAceptar.TabIndex = 16;
-            this.btnAceptar.Text = "Añadir";
-            this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAccept.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnAccept.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAccept.Location = new System.Drawing.Point(474, 279);
+            this.btnAccept.Name = "btnAccept";
+            this.btnAccept.Size = new System.Drawing.Size(110, 34);
+            this.btnAccept.TabIndex = 16;
+            this.btnAccept.Text = "Add";
+            this.btnAccept.UseVisualStyleBackColor = true;
+            this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
+            // 
+            // dtpEdition
+            // 
+            this.dtpEdition.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpEdition.Location = new System.Drawing.Point(474, 114);
+            this.dtpEdition.Name = "dtpEdition";
+            this.dtpEdition.Size = new System.Drawing.Size(228, 30);
+            this.dtpEdition.TabIndex = 17;
+            // 
+            // tbGenre
+            // 
+            this.tbGenre.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbGenre.Location = new System.Drawing.Point(240, 152);
+            this.tbGenre.Margin = new System.Windows.Forms.Padding(4);
+            this.tbGenre.Name = "tbGenre";
+            this.tbGenre.PlaceholderText = "Genre";
+            this.tbGenre.Size = new System.Drawing.Size(228, 30);
+            this.tbGenre.TabIndex = 18;
+            this.tbGenre.Tag = "";
+            // 
+            // lblAdquisition
+            // 
+            this.lblAdquisition.AutoSize = true;
+            this.lblAdquisition.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblAdquisition.Location = new System.Drawing.Point(474, 11);
+            this.lblAdquisition.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAdquisition.Name = "lblAdquisition";
+            this.lblAdquisition.Size = new System.Drawing.Size(143, 25);
+            this.lblAdquisition.TabIndex = 19;
+            this.lblAdquisition.Text = "Adquisition date";
+            // 
+            // lblEdition
+            // 
+            this.lblEdition.AutoSize = true;
+            this.lblEdition.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblEdition.Location = new System.Drawing.Point(474, 79);
+            this.lblEdition.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEdition.Name = "lblEdition";
+            this.lblEdition.Size = new System.Drawing.Size(109, 25);
+            this.lblEdition.TabIndex = 20;
+            this.lblEdition.Text = "Edition Date";
+            // 
+            // lblFormat
+            // 
+            this.lblFormat.AutoSize = true;
+            this.lblFormat.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblFormat.Location = new System.Drawing.Point(240, 186);
+            this.lblFormat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblFormat.Name = "lblFormat";
+            this.lblFormat.Size = new System.Drawing.Size(69, 25);
+            this.lblFormat.TabIndex = 21;
+            this.lblFormat.Text = "Format";
+            // 
+            // lblType
+            // 
+            this.lblType.AutoSize = true;
+            this.lblType.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblType.Location = new System.Drawing.Point(240, 250);
+            this.lblType.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblType.Name = "lblType";
+            this.lblType.Size = new System.Drawing.Size(49, 25);
+            this.lblType.TabIndex = 22;
+            this.lblType.Text = "Type";
             // 
             // VistaAnadir
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(883, 452);
-            this.Controls.Add(this.btnAceptar);
-            this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.tb);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(712, 321);
+            this.Controls.Add(this.lblType);
+            this.Controls.Add(this.lblFormat);
+            this.Controls.Add(this.lblEdition);
+            this.Controls.Add(this.lblAdquisition);
+            this.Controls.Add(this.tbGenre);
+            this.Controls.Add(this.dtpEdition);
+            this.Controls.Add(this.btnAccept);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.dtpAdquisition);
+            this.Controls.Add(this.cbType);
+            this.Controls.Add(this.cbFormat);
+            this.Controls.Add(this.tbDescription);
+            this.Controls.Add(this.tbSecArtist);
+            this.Controls.Add(this.tbArtist);
+            this.Controls.Add(this.tbName);
+            this.Controls.Add(this.btnExplore);
             this.Controls.Add(this.lblCabecera);
-            this.Controls.Add(this.lblImagen);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.lblImage);
+            this.Controls.Add(this.pbImage);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "VistaAnadir";
             this.Text = "VistaAnadir";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -218,18 +297,24 @@ namespace ProyectoDintNuno
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label lblImagen;
+        private System.Windows.Forms.PictureBox pbImage;
+        private System.Windows.Forms.Label lblImage;
         private System.Windows.Forms.Label lblCabecera;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox tb;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button btnAceptar;
+        private System.Windows.Forms.Button btnExplore;
+        private System.Windows.Forms.TextBox tbName;
+        private System.Windows.Forms.TextBox tbArtist;
+        private System.Windows.Forms.TextBox tbSecArtist;
+        private System.Windows.Forms.TextBox tbDescription;
+        private System.Windows.Forms.ComboBox cbFormat;
+        private System.Windows.Forms.ComboBox cbType;
+        private System.Windows.Forms.DateTimePicker dtpAdquisition;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnAccept;
+        private System.Windows.Forms.DateTimePicker dtpEdition;
+        private System.Windows.Forms.TextBox tbGenre;
+        private System.Windows.Forms.Label lblAdquisition;
+        private System.Windows.Forms.Label lblEdition;
+        private System.Windows.Forms.Label lblFormat;
+        private System.Windows.Forms.Label lblType;
     }
 }

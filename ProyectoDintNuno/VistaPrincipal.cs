@@ -19,14 +19,27 @@ namespace ProyectoDintNuno
 
         private void btnAnadir_Click(object sender, EventArgs e)
         {
-            FlowLayoutPanel panel = new FlowLayoutPanel();
-            PictureBox pb = new PictureBox();
-            TextBox tb = new TextBox();
-            panel.Controls.Add(pb);
-            panel.Controls.Add(tb);
-             
+            VistaAnadir form = new VistaAnadir();
+            if(form.ShowDialog() == DialogResult.OK)
+            {
+                FlowLayoutPanel panel = new FlowLayoutPanel();
+                PictureBox pb = new PictureBox();
+                Label lblName = new Label();
+                Label lblArtist = new Label();
+                
+                panel.Controls.Add(pb);
+                panel.Controls.Add(lblName);
+                panel.Controls.Add(lblArtist);
 
-            flpConjunto.Controls.Add(panel);
+                lblName.Text = form.Name;
+                lblName.Font = new Font("Segoe UI", 9);
+                lblArtist.Text = form.PArtist;
+                lblArtist.Font = new Font("Segoe UI", 6);
+
+                flpConjunto.Controls.Add(panel);
+            }
+
+            
         }
     }
 }

@@ -49,8 +49,7 @@ namespace ProyectoDintNuno
                 {
                     Image = Image.FromFile(of.FileName);
                     pbImage.Image = Image;
-                }
-                
+                }                
             }
         }
     }

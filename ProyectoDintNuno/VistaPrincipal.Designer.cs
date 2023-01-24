@@ -34,6 +34,7 @@ namespace ProyectoDintNuno
             this.vistaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.flpConjunto = new System.Windows.Forms.FlowLayoutPanel();
             this.btnAnadir = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,9 +66,10 @@ namespace ProyectoDintNuno
             this.flpConjunto.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.flpConjunto.Location = new System.Drawing.Point(0, 24);
+            this.flpConjunto.AutoScroll = true;
+            this.flpConjunto.Location = new System.Drawing.Point(12, 27);
             this.flpConjunto.Name = "flpConjunto";
-            this.flpConjunto.Size = new System.Drawing.Size(858, 428);
+            this.flpConjunto.Size = new System.Drawing.Size(837, 425);
             this.flpConjunto.TabIndex = 2;
             // 
             // btnAnadir
@@ -86,11 +88,22 @@ namespace ProyectoDintNuno
             this.btnAnadir.UseVisualStyleBackColor = false;
             this.btnAnadir.Click += new System.EventHandler(this.btnAnadir_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(578, 459);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // VistaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(858, 503);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnAnadir);
             this.Controls.Add(this.flpConjunto);
             this.Controls.Add(this.menuStrip1);
@@ -110,6 +123,7 @@ namespace ProyectoDintNuno
         private System.Windows.Forms.ToolStripMenuItem vistaToolStripMenuItem;
         private System.Windows.Forms.FlowLayoutPanel flpConjunto;
         private System.Windows.Forms.Button btnAnadir;
+        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace ProyectoDintNuno
 {
-    public partial class Form1 : Form
+    public partial class VistaLista : Form
     {
-        public Form1()
+        public VistaLista()
         {
             InitializeComponent();
         }

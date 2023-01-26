@@ -12,6 +12,7 @@ namespace ProyectoDintNuno
 {
     public partial class VistaPrincipal : Form
     {
+        private int Contador = 1;
         public VistaPrincipal()
         {
             InitializeComponent();
@@ -25,9 +26,7 @@ namespace ProyectoDintNuno
                 FlowLayoutPanel panel = new FlowLayoutPanel();
                 PictureBox pb = new PictureBox();
                 Label lblName = new Label();
-                Label lblArtist = new Label();
-
-                
+                Label lblArtist = new Label();                
 
                 lblName.Text = form.Name;
                 lblName.Font = new Font("Segoe UI", 16);
@@ -50,13 +49,28 @@ namespace ProyectoDintNuno
                 panel.MinimumSize = new Size(185, 250);
                 panel.MaximumSize = new Size(185, 300);
 
-
                 pb.Image = form.Image;
                 pb.SizeMode = PictureBoxSizeMode.Zoom;
                 pb.MinimumSize = new Size(180, 180);
                 pb.MaximumSize = new Size(180, 180);
                 //pb.BackColor = Color.Gray;
                 flpConjunto.Controls.Add(panel);
+
+                string[] row = new string[11];
+                row[0] = Contador.ToString();
+                row[2] = form.Name;
+                row[3] = form.PArtist;
+                row[4] = form.SArtist;
+                row[5] = form.Genre;
+                row[6] = form.Format;
+                row[7] = form.Type;
+                row[8] = form.AdDate.ToString("G");
+                row[9] = form.EdDate.ToString("G");
+                row[10] = form.Description;
+
+                dgvPrincipal.Rows.Add(row);
+                dgvPrincipal.Rows[dgvPrincipal.Rows.Count - 1].Cells["cImage"].Value = form.Image;
+                Contador++;
             }
         }
 

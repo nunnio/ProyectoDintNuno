@@ -16,8 +16,8 @@ namespace ProyectoDintNuno
         public string Genre;
         public string Format;
         public string Type;
-        public DateTime DAdquisition;
-        public DateTime DEdition;
+        public DateTime AdDate;
+        public DateTime EdDate;
         public string Description;
         public Image Image;
 
@@ -34,8 +34,8 @@ namespace ProyectoDintNuno
             Genre = tbGenre.Text;
             Format = cbFormat.Text;
             Type = cbType.Text;
-            DAdquisition = dtpAdquisition.Value;
-            DEdition = dtpEdition.Value;
+            AdDate = dtpAdquisition.Value;
+            EdDate = dtpEdition.Value;
             Description = tbDescription.Text;
             Image = pbImage.Image;
         }

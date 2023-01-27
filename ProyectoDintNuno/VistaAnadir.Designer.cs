@@ -101,7 +101,7 @@ namespace ProyectoDintNuno
             this.tbName.Location = new System.Drawing.Point(240, 38);
             this.tbName.Margin = new System.Windows.Forms.Padding(4);
             this.tbName.Name = "tbName";
-            this.tbName.PlaceholderText = "Name";
+            this.tbName.PlaceholderText = "Name *";
             this.tbName.Size = new System.Drawing.Size(228, 30);
             this.tbName.TabIndex = 8;
             this.tbName.Tag = "";
@@ -112,7 +112,7 @@ namespace ProyectoDintNuno
             this.tbArtist.Location = new System.Drawing.Point(240, 76);
             this.tbArtist.Margin = new System.Windows.Forms.Padding(4);
             this.tbArtist.Name = "tbArtist";
-            this.tbArtist.PlaceholderText = "Principal artist";
+            this.tbArtist.PlaceholderText = "Principal artist *";
             this.tbArtist.Size = new System.Drawing.Size(228, 30);
             this.tbArtist.TabIndex = 9;
             this.tbArtist.Tag = "";
@@ -142,6 +142,7 @@ namespace ProyectoDintNuno
             // 
             // cbFormat
             // 
+            this.cbFormat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbFormat.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cbFormat.FormattingEnabled = true;
             this.cbFormat.Items.AddRange(new object[] {
@@ -156,6 +157,7 @@ namespace ProyectoDintNuno
             // 
             // cbType
             // 
+            this.cbType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbType.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cbType.FormattingEnabled = true;
             this.cbType.Items.AddRange(new object[] {
@@ -195,7 +197,6 @@ namespace ProyectoDintNuno
             // 
             // btnAccept
             // 
-            this.btnAccept.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnAccept.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnAccept.Location = new System.Drawing.Point(474, 279);
             this.btnAccept.Name = "btnAccept";

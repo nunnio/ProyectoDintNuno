@@ -38,6 +38,36 @@ namespace ProyectoDintNuno
             EdDate = dtpEdition.Value;
             Description = tbDescription.Text;
             Image = pbImage.Image;
+            bool valido;
+            if (String.IsNullOrEmpty(Name) || String.IsNullOrEmpty(PArtist))
+            {
+                valido = false;
+            }
+            else
+            {
+                valido = true;
+            }
+            if (String.IsNullOrEmpty(Name))
+            {
+                tbName.BackColor = Color.Red;
+            }
+            else
+            {
+                tbName.BackColor = Color.White;
+            }
+            if (String.IsNullOrEmpty(PArtist))
+            {
+                tbArtist.BackColor = Color.Red;
+            }
+            else
+            {
+                tbArtist.BackColor = Color.White;
+            }
+            
+            if (valido)
+            {
+                DialogResult = DialogResult.OK;
+            }
         }
 
         private void btnExplore_Click(object sender, EventArgs e)

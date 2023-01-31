@@ -259,7 +259,7 @@ namespace ProyectoDintNuno
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "VistaPrincipal";
-            this.Text = "Images View";
+            this.Text = " ";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tcVistaPrincipal.ResumeLayout(false);

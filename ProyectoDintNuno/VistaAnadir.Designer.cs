@@ -105,6 +105,7 @@ namespace ProyectoDintNuno
             this.tbName.Size = new System.Drawing.Size(228, 30);
             this.tbName.TabIndex = 8;
             this.tbName.Tag = "";
+            this.tbName.TextChanged += new System.EventHandler(this.tbName_TextChanged);
             // 
             // tbArtist
             // 
@@ -116,6 +117,7 @@ namespace ProyectoDintNuno
             this.tbArtist.Size = new System.Drawing.Size(228, 30);
             this.tbArtist.TabIndex = 9;
             this.tbArtist.Tag = "";
+            this.tbArtist.TextChanged += new System.EventHandler(this.tbArtist_TextChanged);
             // 
             // tbSecArtist
             // 

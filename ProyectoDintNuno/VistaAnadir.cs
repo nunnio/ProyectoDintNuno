@@ -47,22 +47,7 @@ namespace ProyectoDintNuno
             {
                 valido = true;
             }
-            if (String.IsNullOrEmpty(Name))
-            {
-                tbName.BackColor = Color.Red;
-            }
-            else
-            {
-                tbName.BackColor = Color.White;
-            }
-            if (String.IsNullOrEmpty(PArtist))
-            {
-                tbArtist.BackColor = Color.Red;
-            }
-            else
-            {
-                tbArtist.BackColor = Color.White;
-            }
+            
             
             if (valido)
             {
@@ -80,6 +65,30 @@ namespace ProyectoDintNuno
                     Image = Image.FromFile(of.FileName);
                     pbImage.Image = Image;
                 }                
+            }
+        }
+
+        private void tbName_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(Name))
+            {
+                tbName.BackColor = Color.Red;
+            }
+            else
+            {
+                tbName.BackColor = Color.White;
+            }      
+        }
+
+        private void tbArtist_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(PArtist))
+            {
+                tbArtist.BackColor = Color.Red;
+            }
+            else
+            {
+                tbArtist.BackColor = Color.White;
             }
         }
     }

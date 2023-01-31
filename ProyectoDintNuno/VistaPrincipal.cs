@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace ProyectoDintNuno
 {
@@ -71,7 +72,13 @@ namespace ProyectoDintNuno
                 dgvPrincipal.Rows.Add(row);
                 dgvPrincipal.Rows[dgvPrincipal.Rows.Count - 1].Cells["cImage"].Value = form.Image;
                 Contador++;
+
+                subeDatos(row);
             }
+        }
+        private void subeDatos(string[] row)
+        {
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
